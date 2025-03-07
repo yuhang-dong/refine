@@ -96,7 +96,7 @@ Open http://localhost:5173 in your browser to view the project.
 <summary><code>providers/auth.ts</code></summary>
 
 ```typescript
-import { AuthBindings } from "@refinedev/core";
+import { AuthProvider } from "@refinedev/core";
 
 import { API_URL, dataProvider } from "./data";
 

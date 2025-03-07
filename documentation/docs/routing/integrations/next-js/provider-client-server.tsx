@@ -205,7 +205,7 @@ export const dataProviderClient = dataProviderSimpleRest(API_URL);
 `;
 
 const AuthProviderServerTsxCode = /* tsx */ `
-import { AuthBindings } from "@refinedev/core";
+import { AuthProvider } from "@refinedev/core";
 import { cookies } from "next/headers";
 
 export const authProviderServer: Pick<AuthBindings, "check"> = {
@@ -232,7 +232,7 @@ export const authProviderServer: Pick<AuthBindings, "check"> = {
 const AuthProviderClientTsxCode = /* tsx */ `
 "use client";
 
-import { AuthBindings } from "@refinedev/core";
+import { AuthProvider } from "@refinedev/core";
 import Cookies from "js-cookie";
 
 const mockUsers = [
